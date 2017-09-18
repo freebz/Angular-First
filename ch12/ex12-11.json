@@ -1,0 +1,9 @@
+// 예제 12-11 데이터베이스에 저장될 번호의 데이터 구조
+
+{
+    'sample': {
+	'myDog': { 'age': 3, 'name': 'mori' },
+	'firebase': { 'hello': 'angularFire' },
+	829: { 'foo': 'bar' }
+    }
+}

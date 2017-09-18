@@ -1,0 +1,14 @@
+<!-- 예제 4-13 NgIf 지시자 -->
+
+<div>
+  <button type="button" (click)="isShow = !isShow">전환</button>
+  <label *nfIf="isShow; else hiding">You are special!</label>
+  <ng-template #hiding>
+    <label>I'm so depressed</label>
+  </ng-template>
+</div>
+
+<div *ngIf="member" >
+  <p>Name: {{member.name}}</p>
+  <p>Email: {{member.email}}</p>
+</div>

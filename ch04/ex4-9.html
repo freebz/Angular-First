@@ -1,0 +1,6 @@
+<!-- 예제 4-9 이벤트 바인딩 -->
+
+<button type="button" (click)="fonfirm()">확인</button>
+<div (mousemove)="printPosition($event)"></div>
+<input type="text" (keyup)="myStr = $event.target.value" />
+<button type="button" (click)="clicked = true; callEvent($event)">확인</button>

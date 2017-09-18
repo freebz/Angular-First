@@ -1,0 +1,10 @@
+<md-card>
+  <div class="contents">
+    <md-input-container>
+      <input mdInput name="value" placeholder="사용자 이름"
+	     [(ngModel)]="userName" (ngModelChange)="onChange()">
+    </md-input-container>
+    <button md-raised-button (click)="showWelcomeMsg()">입력</button>
+    <span class="welcome-msg">{{welcomeMsg}}</span>
+  </div>
+</md-card>

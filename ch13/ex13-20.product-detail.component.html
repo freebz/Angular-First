@@ -1,0 +1,13 @@
+<!-- 예제 13-20 ProductDetailComponent 템플릿 일부 -->
+
+<select type="number" formControlName="catNo">
+  <option [value]="0">선택해 주세요</option>
+  <option *ngFor="let cat of usedCats" [value]="cat.no">{{cat.name}}</option>
+</select>
+...
+<button type="button" class="..." [disabled]="isFirstItem()" (click)="goPrefItem()">
+  <i class="fa fa-arrow-left"></i> 이전 상품
+</button>
+<button type="button" class="..." [disalbed]="isLastItem()" (click)="goNextItem()">
+  <i class="fa fa-arrow-right"></i> 다음 상품
+</button>

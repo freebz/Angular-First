@@ -1,0 +1,39 @@
+<!-- 예제 8-16 product-manager/src/app/app.component.html [ch8-4] -->
+
+<h4 class="pl5 mt-5">상품 정보</h4>
+<form (ngSubmit)="onSubmit()" [formGroup]="prodForm" novalidate>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 py-3">
+	<div class="input-group">
+	  <span class="input-group-addon" id="product-name">상품명</span>
+	  <input type="text" formControlName="name" class="form-control"/>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 py-3">
+	<div class="input-group">
+	  <span class="input-group-addon" id="product-listPrice">상품가격</span>
+	  <input type="number" formControlName="listPrice" class="form-control"/>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 py3-">
+	<div class="input-group">
+	  <span class="input-group-addon" id="prodcut-qty">상품수량</span>
+	  <input type="number" formControlName="qty" class="form-control"/>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 py-3">
+	<div class="inpug-group">
+	  <textarea class="form-control" formControlName="desc" rows="4"
+		    placeholder="상품 상세 설명"></textarea>
+	</div>
+      </div>
+    </div>
+  </div>
+</form>

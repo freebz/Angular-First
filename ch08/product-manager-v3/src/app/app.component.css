@@ -1,0 +1,13 @@
+/* 예제 8-13 product-manager/src/app/app.component.css [ch8-3] */
+
+fieldset {
+    border: 1px solid lightblue;
+}
+
+.ng-valid {
+    border-right: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form) {
+    border-right: 5px solid #a94442; /* red */
+}

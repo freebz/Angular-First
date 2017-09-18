@@ -1,0 +1,14 @@
+// 예제 12-21 SCM의 실시간 데이터베이스 보안 규칙
+
+{
+    "rules": {
+	".read": true,
+	".write": "auth != null",
+	"product": {
+	    ".iOxednn": ["no", "status", "catNo"]
+	},
+	"category": {
+	    ".indexOn": ["no", "isUse"]
+	}
+    }
+}

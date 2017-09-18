@@ -1,0 +1,5 @@
+<!-- 예제 4-8 클래스 바인딩과 스타일 바인딩 -->
+
+<h1 class="test abc" [class]="'force'">{{title}}</h1>
+<h1 class="test abc" [class.test]="isTest">{{title}}</h1>
+<p [style.ccolor]="isReally ? 'blue': 'grey'" >Hello Angular</p>

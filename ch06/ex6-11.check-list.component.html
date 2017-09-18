@@ -1,0 +1,9 @@
+<!-- 예제 6-11 comp-comm/src/app/check-list/check-list.component.html [ch6-3] -->
+
+<h4>항목 체크</h4>
+<span *ngFor="let item of checkList; let i = index">
+  <label for="chk-{{i + 1}}">{{item}}</label>
+  <input type="checkbox" id="chk-{{i + 1}}" [(ngModel)]="checkedResult[i]" />
+</span>
+<button (click)="extractCheckedResult()">결과 출력</button>
+<cc-check-list-result [checkedResult]="checkedResultData"></cc-check-list-result>

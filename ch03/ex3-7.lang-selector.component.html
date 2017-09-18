@@ -1,0 +1,11 @@
+<!-- 예제 3-7 ng-welcome-msg-app/src/app/lang-selector.component.html [ch3-5] -->
+
+<div id="lang-select">
+  <div class="lang-box">
+    <img src="/assets/img/South_Korea.png">
+    <label *ngIf="langCode === 'ko'">선택됨</label>
+    <button type="button" (click)="setLangCode('ko')"
+	    [disabled]="langCode=== 'ko'">한국어</button>
+  </div>
+  <!-- 다른 언어 템플릿 생략 -->
+</div>

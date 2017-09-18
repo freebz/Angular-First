@@ -1,0 +1,8 @@
+// 예제 12-20 최초 database.rules.json
+
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
